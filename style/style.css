@@ -39,8 +39,38 @@ body{
     height: 50rem;
 }
 
-.profile-photo img{
-    height: 150px;
+.instagram-continue{
+    display: flex;
+    flex-direction: column;/*Quando a direção do flex-direction muda, a orientação do align-items também muda, assim como o justify-content*/
+    align-items: center;/*HORIZONTAL*/
+    justify-content: space-around;/*VERTICAL*/
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     border-radius: 50%;
-    border: 1px solid #1900ff;
 }
